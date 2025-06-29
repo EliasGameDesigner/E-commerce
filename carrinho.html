@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrinho</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="stylecheck.css">
+</head>
+
+<!-- Adicionada a classe 'carrinho-page' para identificar a página no JS -->
+<body class="carrinho-page">
+    <header class="gradient">
+        <div id="time">
+            <div>
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAkVJREFUSEu11UnIT1EYBvDfJxkixc4QYkERUpQSVjIkmS1QSpKIhSyQIawkGUsSocRCMkZZyLCTKZKZLGwUKUOE89b56u+6//v30Xc293bve87zDs/znCatvJpa+XyNANpjBiZgKPriJ17iDi7iFL7VS7QKYCL25UOrCn2KJbhSFlQPYGPKdEPe8BoncB5387dhmILZ6JW/rcL2IkgZQPPhHzEPZ3NbyhJsg1k4hI5YgV21gUWAyOoMPqeMR6TND/6SBCNxAwE4Fteb99UCdMZjdMd8HCs5PAYcq6zyldiBR2nwQ5oHXxu4FHtTXx9icJ22VAG0y+yKBKfhdDGTCwjmLMtAZd2pAoj4rViDA1hcBHiTfvREfzyv0/tGAKNxDbfTLIcXAT5lJgQbvjQACMG9Konphnd4j65FgKBlDLoL4r1svcjCi+cYRNW1K/Z+yPvj/Tc2xPQHZAbcrwMQLQw69skDHZVU/LYmNtpyKxNlUBHgeKLYXKzGtgr+h3Kvol+qYBEO1sSuw+Y0x6NpjguKAMH9I3iCgfhRARKVzEx93lkT0zbp5xl6Yw5OFgFiuNGmCFiYen24AqDs1/JsEyHWENrXMkWOx6V/sIqwlZvZKsZlqtaV/FpsyWwIsztXUUl4T7QjhNUpUTSq2FMbX8+u1yeGbcqBQcmw61D6PYQlhJVMzU7aI9tKOOnuYjJVF87kZHz7s7qrxhEXTrApmPXHanRldkhZT8ekPLjgf9hFsCX4fjmb2vd6GTQCaCGRWl7BfwP8ApYabxnCPAebAAAAAElFTkSuQmCC"
+                    width="40px" height="35px" />
+                <h1>Time</h1>
+
+            </div>
+            <h3><u>To shop</u></h3>
+        </div></a>
+
+        <input type="text" placeholder="Pesquisar...">
+        
+        <button id="btn-carrinho">
+            <img
+                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAWFJREFUSEvN1CFMVmEUxvEfYxg0soHNmbERMJEoBBqBIsPEmAXmdCY3opuMQsCNOaEogUagGEgOAgmCxUKBQWBsBGeAe9i9292377v3xevnOOWG93nP/z3nOef26HL0dDm//wq4zqu5whrm/0V15QoKQJF3DN+bQtq16C0+YBsT3QD04wS9eILjJpBOJm/gRYPEm5iK+50Az/GjAeAIz6oAcXaIIcxgPREWumm8y32s3INZrGIfIwmARzjHg+zeY5zVVfAwF8V3GAc1kJf4jB2MF9q6TV7JIK/wBZGgKnYxmpsbJt9GHSA8CC9+YwCXHQhPs97/yrb/Itf9SQWErnjZG3zsAFjE+9yzubKmroLQxjx/TTA5JDHee3cF9OFnNqrRhqrYyto52SpIqSDx8e1lqYAFvMYSlltSVZ3VTlGRK35+gzjNl6jMqDpLBnzKzf6G2PByVJ0lA/7ah1QP7i/gBq16NxnJzE4xAAAAAElFTkSuQmCC" /></a>
+    </button>
+
+    </header>
+
+    <main>
+        <ul id="items">
+            <!-- Itens do carrinho serão carregados dinamicamente aqui -->
+        </ul>
+
+        <div id="revisao">
+            <div class="buttonContainer">
+                <button id="btn-comprar">Comprar</button>
+            </div>
+            <!-- ID duplicado 'buttonContainer' foi trocado por uma classe -->
+            <div class="buttonContainer">
+                <button id="btn-salvar">
+                    <img src="Images/estrela.png" alt="Ícone de estrela">
+                    Salvar Carrinho
+                </button>
+            </div>
+            <div id="precos">
+                <h1>Total: R$0,00</h1>
+            </div>
+        </div>
+    </main>
+
+    <footer class="fogradient">
+        <div>
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAfxJREFUSEu11E2oTlEUBuDnKiWKEomBmYgowoAMlJ8oEyMDUiaEGFCUmBBJzPzMJEWYyEQyIpkgUgZ+BshMJkR+46zbPjr2Pdv9vlN31Vfn22uv9a79rnetASNsAyOcXxeAUfiAV7iH67hTKrQNIM72YwZ241MWHAC/srNH2IaHOVAOMB5XsTpdvF9Vtxzfs8ApmIOF2IvJ+IFNuNK8mwM8xdws2Q2sb6m6vjYB57ABXzAfL2pnDvC7wOV5bGn4Plb/3yb+D+MbLlZ92Zj6sqwE8BljCyAHcDT5moU8wSKMxptEVwCEAIao6FnVg9kFgJtYm3yTUp9OYGrFfw1+JH2fqsSxpw3gcuIyx3heVbQC7zJH8B4xUW1UvTR9P8DiNoCQ2tksyWOsTNrPgeMl75MvvvP/QyiannhsJpqFeEEnaxu0kOW6RrZDCKV0sjaAGJ7gsLavaaBCAE2L5p7ELVwooZd20WlsbwS9xiq8TGcxuXcR9IWFeg62gZQAxqQFNqiEZDEjx6oVcS395mUJz2An/hnW/23TUETIb2Yf5F/CZvysY4Zb17FnouKQaa8WL9nRK0DciyJ2pTVRWiNN8ONp3Q+eDfeCZmA0dl7a++MKz7mNNc3N2w9AnXMitmIJFmBacsQwhihi0/61LgC99qJvivpK3E+TOyWug/4AhQ9YGT/BtygAAAAASUVORK5CYII=" />
+        </div>
+        <div>
+            <h1>Suporte</h1>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

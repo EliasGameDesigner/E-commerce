@@ -1,0 +1,103 @@
+.ajuda{
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    float: left;
+    width: 336px;
+    height: 87px;
+    overflow: hidden;
+    padding: 73px 35px;
+    margin-right: 10px;
+    margin-bottom: 50px;
+    cursor: pointer;
+    background: #fff;
+    border: 1px solid rgba(0, 0, 0, .16);
+    flex-direction: row;
+}
+.icones{
+    flex:83px;
+    width:62px;
+    height:64px;
+    margin-right:40px;
+}
+.textos{
+    width: 200px;
+    font-size: 16px;
+    line-height: 45px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    font-size: 30px;
+}
+
+
+#separar_ajuda {
+    width: 89%;
+    height: 70vh;
+    overflow: hidden;
+    display: flex
+;
+    flex-direction: column;
+    position: relative;
+   
+    overflow-y: auto;
+}
+
+
+
+#caminhão{
+    width: 65px;
+    height: 65px;
+}
+#caixa{
+    width: 65px;
+    height: 65px;
+}
+#sasalele{
+    width: 65px;
+    height: 65px;
+}
+#pagamento{
+    width: 65px;
+    height: 65px;
+}
+#conversinha_saliente{
+    width: 65px;
+    height: 65px;
+}
+#email{
+    width: 65px;
+    height: 65px;
+}
+#telefone_ajuda{
+    width: 60px;
+    height: 60px;
+    
+}
+#textos_ajuda{
+    width: 100%;
+    height: 100%;
+    font-size: 16px;
+    line-height: 45px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    font-size: 25px;
+}
+
+#ajuda2{
+        box-sizing: border-box;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    float: left;
+    width: 85%;
+    height: 100%;
+    
+    cursor: pointer;
+    background: #ffffff00;
+    flex-direction: row;
+    
+}
