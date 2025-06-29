@@ -1,0 +1,280 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+
+
+body {
+    height: auto;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow-x: hidden;
+    background-color: #FAFAFB;
+    min-height: 100vh;
+}
+
+header {
+    flex-direction: row;
+    justify-content: space-around;
+    display: flex;
+    align-items: center;
+
+    width: 100%;
+    height: 15vh;
+}
+
+header button {
+    background: none;
+    border: none;
+    width: auto;
+    height: auto;
+}
+
+header button img {
+    width: 50px;
+}
+
+header input {
+    border-radius: 10px;
+}
+
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 15vh;
+    bottom: 0;
+}
+
+.gradient {
+
+
+    background: rgb(240, 54, 54);
+    background: linear-gradient(180deg, rgba(240, 54, 54, 1) 0%, rgba(249, 114, 57, 1) 100%);
+    font-family: sans-serif;
+
+
+}
+
+.fogradient {
+    background: rgb(240, 54, 54);
+    background: linear-gradient(180deg, rgba(240, 54, 54, 1) 0%, rgba(249, 114, 57, 1) 100%);
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: row;
+
+    bottom: 0;
+}
+
+#time {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#time div {
+    display: flex;
+    flex-direction: row;
+}
+
+
+
+#texto{
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#Endereço{
+
+    margin: 3vh;
+    height: 70vh;
+    width: 80vw;
+    display: flex;
+    justify-content: flex-start;
+    align-content: center;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+}
+
+#tituloEn{
+
+    width: 80vw; 
+}
+
+
+
+#items{
+    width: 80%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+}
+
+.item{
+    margin: 20px;
+    height: 40%;
+    width: 100%;
+    border: 2px solid black ;
+}
+
+
+
+/* Responsive styles */
+
+@media (max-width: 768px) {
+    header {
+        height: auto;
+        padding: 10px 5%;
+        flex-direction: column;
+    }
+
+    header #time {
+       
+        justify-content: center;
+    }
+
+    header #time div {
+        flex-direction: row;
+        align-items: center;
+        gap: 10px;
+    }
+
+    header #time h1 {
+        font-size: 1.5rem;
+        margin-left: 10px;
+    }
+
+    header #time h3 {
+        font-size: 1rem;
+        margin-left: 10px;
+    }
+
+    #texto {
+        height: auto;
+        padding: 20px;
+        font-size: 1.2rem;
+        text-align: center;
+    }
+
+    footer {
+        height: auto;
+        flex-direction: column;
+        padding: 15px 5%;
+        gap: 10px;
+    }
+
+    footer div {
+        margin: 5px 0;
+        text-align: center;
+    }
+
+    footer img {
+        width: 30px;
+        height: 30px;
+    }
+
+    footer h1 {
+        font-size: 1.3rem;
+    }
+
+    #Endereço {
+        width: 90vw;
+        height: auto;
+        margin: 20px auto;
+    }
+
+    #Endereço input[type="text"] {
+        width: 100% !important;
+        padding: 10px;
+        font-size: 1rem;
+        margin-bottom: 15px;
+    }
+
+    #tituloEn {
+        width: 90vw;
+        font-size: 1.5rem;
+        text-align: center;
+        margin: 1rem auto;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        height: auto;
+        padding: 10px 2%;
+        flex-direction: column;
+    }
+
+    header #time div {
+        gap: 5px;
+    }
+
+    header #time h1 {
+        font-size: 1.2rem;
+    }
+
+    header #time h3 {
+        font-size: 0.9rem;
+    }
+
+    #texto p {
+        font-size: 1rem;
+        padding: 10px;
+    }
+
+    footer {
+        padding: 10px 2%;
+        flex-direction: column;
+        height: auto;
+        gap: 8px;
+    }
+
+    footer img {
+        width: 25px;
+        height: 25px;
+    }
+
+    footer h1 {
+        font-size: 1.1rem;
+    }
+
+    #Endereço {
+        width: 95vw;
+        margin: 15px auto;
+        height: auto;
+    }
+
+    #Endereço input[type="text"] {
+        width: 100% !important;
+        padding: 8px;
+        font-size: 0.9rem;
+        margin-bottom: 12px;
+    }
+
+    #tituloEn {
+        font-size: 1.3rem;
+        margin: 10px auto;
+    }
+}
+
+

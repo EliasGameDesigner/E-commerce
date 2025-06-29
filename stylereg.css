@@ -1,0 +1,236 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #fff;
+    color: #333;
+    padding: 10px;
+}
+
+header,
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 20vh;
+}
+
+.gradient {
+    background: rgb(240, 54, 54);
+    background: linear-gradient(180deg, rgba(240, 54, 54, 1) 0%, rgba(249, 114, 57, 1) 100%);
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    padding: 10px 0;
+}
+
+#time {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 90%;
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+form h3 {
+    margin-bottom: 15px;
+    font-size: 1.8rem;
+    color: #f03636;
+    text-align: center;
+}
+
+form input[type="text"],
+form input[type="password"] {
+    padding: 12px 15px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1rem;
+    width: 100%;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease;
+}
+
+form input[type="text"]:focus,
+form input[type="password"]:focus {
+    border-color: #f07239;
+    outline: none;
+}
+
+form input[type="submit"] {
+    background-color: #f03636;
+    color: white;
+    padding: 12px 20px;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form input[type="submit"]:hover {
+    background-color: #d03030;
+}
+
+/* Footer adjustments */
+footer.fogradient {
+    background: linear-gradient(180deg, rgba(240, 54, 54, 1) 0%, rgba(249, 114, 57, 1) 100%);
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px 0;
+}
+
+footer div {
+    text-align: center;
+}
+
+footer h1 {
+    font-size: 1.5rem;
+    color: white;
+    cursor: pointer;
+}
+
+footer img {
+    width: 24px;
+    height: 24px;
+}
+
+input {
+    width: 100%;
+}
+
+
+.address-form-container {
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
+
+.add-address-button {
+    background-color: #4CAF50;
+    /* Um verde agradável para o botão de adicionar */
+    color: white;
+    padding: 12px 20px;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+    width: auto;
+    /* Ajusta a largura para o conteúdo */
+    align-self: center;
+    /* Centraliza o botão no formulário flex-direction: column */
+}
+
+.add-address-button:hover {
+    background-color: #45a049;
+}
+
+.form-section {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    /* Espaço entre os formulários de endereço */
+}
+
+
+
+
+
+/* Tablets (medium devices) */
+@media (max-width: 768px) {
+
+    header,
+    footer {
+        height: auto;
+        padding: 10px 5%;
+    }
+
+    form {
+        padding: 15px;
+        width: 95%;
+        max-width: 450px;
+    }
+
+    form h3 {
+        font-size: 1.5rem;
+    }
+
+    form input[type="submit"] {
+        font-size: 1rem;
+        padding: 10px 15px;
+    }
+}
+
+/* Mobile phones (small devices) */
+@media (max-width: 480px) {
+    body {
+        padding: 5px;
+    }
+
+    form {
+        padding: 10px;
+        width: 100%;
+        max-width: 100%;
+        box-shadow: none;
+    }
+
+    form h3 {
+        font-size: 1.3rem;
+    }
+
+    form input[type="text"],
+    form input[type="password"] {
+        font-size: 0.9rem;
+        padding: 10px;
+    }
+
+    form input[type="submit"] {
+        font-size: 1rem;
+        padding: 10px;
+    }
+
+    #time h1 {
+        font-size: 1rem;
+    }
+
+    #time h3 {
+        font-size: 0.85rem;
+    }
+
+    header,
+    footer {
+        height: auto;
+        flex-direction: column;
+        padding: 10px 0;
+    }
+
+    footer h1 {
+        font-size: 1.2rem;
+    }
+}

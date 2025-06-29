@@ -1,0 +1,113 @@
+main {
+   height: auto;
+   min-height: 80vh;
+   width: 100%;
+   display: flex;
+   justify-content: center;
+   padding: 20px;
+}
+
+#pix{
+   margin-bottom: 10%;
+   box-sizing: border-box;
+   width: 200px;
+   font-size: 16px;
+   line-height: 45px;
+   overflow: hidden;
+   text-overflow: ellipsis;
+   display: -webkit-box;
+   -webkit-box-orient: vertical;
+   font-size: 30px;
+   border-radius: 8px;
+    position: relative;
+    padding: 14px 18px;
+}
+#iconepix{
+   flex:83px;
+   width:62px;
+   height:64px;
+   margin-right:40px;
+}
+
+
+#iconecartão{
+   flex:83px;
+   width:62px;
+   height:64px;
+   margin-right:40px;
+}
+
+
+#boleto{
+   box-sizing: border-box;
+}
+#iconeboleto{
+   flex:83px;
+   width:62px;
+   height:64px;
+   margin-right:40px;
+}
+
+#metodos {
+    width: 100%;
+    max-width: 1200px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#metodos ul{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 0;
+    list-style: none;
+
+}
+
+.metodosItem{
+   box-sizing: border-box;
+   display: flex;
+   align-items: center;
+   float: left;
+   width: 336px;
+   height: 87px;
+   overflow: hidden;
+   padding: 73px 35px;
+   margin-right: 10px;
+   margin-bottom: 50px;
+   cursor: pointer;
+   background: #fff;
+   border: 1px solid rgba(0, 0, 0, .16);
+   flex-direction: row;
+   justify-content: space-around;
+}
+
+.icones img {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+}
+
+@media (max-width: 768px) {
+   .metodosItem {
+       max-width: 100%;
+       
+       align-items: center;
+       text-align: center;
+   }
+
+   .icones img {
+       margin-right: 0;
+   }
+
+   #metodos{
+      flex-direction: column;
+   }
+}
+
+
+
+
