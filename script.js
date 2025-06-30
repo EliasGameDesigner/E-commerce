@@ -21,7 +21,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const btnInicial = document.getElementById("time");
         if (btnInicial) {
             btnInicial.addEventListener('click', function () {
-                window.location.href = 'index.html';
+                window.location.href = 'paginaInicial.html';
             });
     }
 

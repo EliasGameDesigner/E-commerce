@@ -1,294 +1,45 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Página Inicial</title>
+    <title>Entrar</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="styleInicial.css">
-    <meta name="Produtos bom e baratos, qualidade, preço baixo">
-    
+    <link rel="stylesheet" href="styleent.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
-
 <body>
     <header class="gradient">
-        <div id="time">
-            <div>
-                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAkVJREFUSEu11UnIT1EYBvDfJxkixc4QYkERUpQSVjIkmS1QSpKIhSyQIawkGUsSocRCMkZZyLCTKZKZLGwUKUOE89b56u+6//v30Xc293bve87zDs/znCatvJpa+XyNANpjBiZgKPriJ17iDi7iFL7VS7QKYCL25UOrCn2KJbhSFlQPYGPKdEPe8BoncB5387dhmILZ6JW/rcL2IkgZQPPhHzEPZ3NbyhJsg1k4hI5YgV21gUWAyOoMPqeMR6TND/6SBCNxAwE4Fteb99UCdMZjdMd8HCs5PAYcq6zyldiBR2nwQ5oHXxu4FHtTXx9icJ22VAG0y+yKBKfhdDGTCwjmLMtAZd2pAoj4rViDA1hcBHiTfvREfzyv0/tGAKNxDbfTLIcXAT5lJgQbvjQACMG9Konphnd4j65FgKBlDLoL4r1svcjCi+cYRNW1K/Z+yPvj/Tc2xPQHZAbcrwMQLQw69skDHZVU/LYmNtpyKxNlUBHgeKLYXKzGtgr+h3Kvol+qYBEO1sSuw+Y0x6NpjguKAMH9I3iCgfhRARKVzEx93lkT0zbp5xl6Yw5OFgFiuNGmCFiYen24AqDs1/JsEyHWENrXMkWOx6V/sIqwlZvZKsZlqtaV/FpsyWwIsztXUUl4T7QjhNUpUTSq2FMbX8+u1yeGbcqBQcmw61D6PYQlhJVMzU7aI9tKOOnuYjJVF87kZHz7s7qrxhEXTrApmPXHanRldkhZT8ekPLjgf9hFsCX4fjmb2vd6GTQCaCGRWl7BfwP8ApYabxnCPAebAAAAAElFTkSuQmCC"
-                    width="40px" height="35px" />
-                <h1>Time</h1>
-
-            </div>
-            <h3><u>To shop</u></h3>
-        </div></a>
-
-        <div class="search-container">
-            <input type="text" id="searchInput" placeholder="Pesquisar...">
-            <button id="searchButton">Pesquisar</button>
-        </div>
-        
-        <button id="btn-carrinho">
-            <img
-                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAWFJREFUSEvN1CFMVmEUxvEfYxg0soHNmbERMJEoBBqBIsPEmAXmdCY3opuMQsCNOaEogUagGEgOAgmCxUKBQWBsBGeAe9i9292377v3xevnOOWG93nP/z3nOef26HL0dDm//wq4zqu5whrm/0V15QoKQJF3DN+bQtq16C0+YBsT3QD04wS9eILjJpBOJm/gRYPEm5iK+50Az/GjAeAIz6oAcXaIIcxgPREWumm8y32s3INZrGIfIwmARzjHg+zeY5zVVfAwF8V3GAc1kJf4jB2MF9q6TV7JIK/wBZGgKnYxmpsbJt9GHSA8CC9+YwCXHQhPs97/yrb/Itf9SQWErnjZG3zsAFjE+9yzubKmroLQxjx/TTA5JDHee3cF9OFnNqrRhqrYyto52SpIqSDx8e1lqYAFvMYSlltSVZ3VTlGRK35+gzjNl6jMqDpLBnzKzf6G2PByVJ0lA/7ah1QP7i/gBq16NxnJzE4xAAAAAElFTkSuQmCC" /></a>
-    </button>
-
-    </header>
-
-    <main>
-        <!-- Seção do contêiner de promoção modificada para ser um slideshow -->
-        <section id="promoConteiner">
-             <!-- Contêiner do Slideshow -->
-            <div class="slideshow-container">
-
-                <!-- Imagens de largura total com texto. Use suas próprias imagens aqui. -->
-                <div class="mySlides fade">
-                    <img src="Images/promo1.jpg" style="width:100%" alt="Anúncio 1">
-                </div>
-
-                <div class="mySlides fade">
-                    <img src="Images/promo2.jpg" style="width:100%" alt="Anúncio 2">
-                </div>
-
-                <div class="mySlides fade">
-                    <img src="Images/promo3.jpg" style="width:100%" alt="Anúncio 3">
-                </div>
-
-                <!-- Botões de próximo e anterior -->
-                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                <a class="next" onclick="plusSlides(1)">&#10095;</a>
-            </div>
-            <br>
-
-            <!-- Os pontos/círculos indicadores -->
-            <div style="text-align:center">
-                <span class="dot" onclick="currentSlide(1)"></span>
-                <span class="dot" onclick="currentSlide(2)"></span>
-                <span class="dot" onclick="currentSlide(3)"></span>
-            </div>
-        </section>
-
-
-        <section id="categoriasSect">
-            <div class="carroselTituloLink">
-                <h3>Categorias</h3>
-                <a href=""> Mostrar Tudo</a>
-            </div>
-            <nav id="categorias">
-                <div id="botaoEsquerda" class="cat-button">
-                    <img src="https://img.icons8.com/ios-filled/50/000000/chevron-left.png" alt="Seta Esquerda">
-                </div>
-
-                <ul id="categorias-lista">
-                    <li class="catItem">
-                        <a href="#">
-                            <img src="Images/monitor.png" alt="Computadores">
-                            <p>Computadores</p>
-                        </a>
-                    </li>
-                    <li class="catItem">
-                        <a href="#">
-                            <img src="Images/celular.png" alt="Celulares">
-                            <p>Celulares</p>
-                        </a>
-                    </li>
-                    <li class="catItem">
-                        <a href="#">
-                            <img src="Images/caixaSom.png" alt="Som">
-                            <p>Som</p>
-                        </a>
-                    </li>
-                    <li class="catItem">
-                        <a href="#">
-                            <img src="Images/tv.png" alt="TVs">
-                            <p>TVs</p>
-                        </a>
-                    </li>
-                     <li class="catItem">
-                        <a href="#">
-                            <img src="Images/iconefoto.png" alt="Videogames">
-                            <p>Videogames</p>
-                        </a>
-                    </li>
-                    <li class="catItem">
-                        <a href="#">
-                           <img src="Images/iconefoto.png" alt="Relógios">
-                            <p>Relógios</p>
-                        </a>
-                    </li>
-                     <li class="catItem">
-                        <a href="#">
-                           <img src="Images/iconefoto.png" alt="Casa Inteligente">
-                            <p>Óculos</p>
-                        </a>
-                    </li>
-                </ul>
-
-                <div id="botaoDireita" class="cat-button">
-                     <img src="https://img.icons8.com/ios-filled/50/000000/chevron-right.png" alt="Seta Direita">
-                </div>
-            </nav>
-        </section>
-
-
-
-        <section class="carroselProd">
-            <div class="carroselTituloLink">
-                <h3>Últimas Pesquisas</h3>
-                <a href=""> Mostrar Tudo</a>
-            </div>
-            
-            <nav id="ultimas-pesquisas-lista" class="produtos-grid">
-                 
-            </nav>
-
-
-        </section>
-
-        <section class="carroselProd">
-            <div class="carroselTituloLink">
-                <h3>Recomendados</h3>
-                <a href=""> Mostrar Tudo</a>
-            </div>
-            <nav id="produtos" class="produtos-grid">
-                <li class="produtoItemPai">
-                    <a href="paginaproduto.html" class="produtoItem">
-                        <img src="Images/iconefoto.png" />
-                    <div>
-                        <h3>Nome</h3>
-                        <p>R$100,00</p>
-                    </div>
-                    </a>
-                </li>
-
-                <li class="produtoItemPai">
-                    <a href="paginaproduto.html" class="produtoItem">
-                        <img src="Images/iconefoto.png" />
-                    <div>
-                        <h3>Nome</h3>
-                        <p>R$100,00</p>
-                    </div>
-                    </a>
-                </li>
-
-                <li class="produtoItemPai">
-                    <a href="paginaproduto.html" class="produtoItem">
-                        <img src="Images/iconefoto.png" />
-                    <div>
-                        <h3>Nome</h3>
-                        <p>R$100,00</p>
-                    </div>
-                    </a>
-                </li>
-
-                <li class="produtoItemPai">
-                    <a href="paginaproduto.html" class="produtoItem">
-                        <img src="Images/iconefoto.png" />
-                    <div>
-                        <h3>Nome</h3>
-                        <p>R$100,00</p>
-                    </div>
-                    </a>
-                </li>
-
-                <li class="produtoItemPai">
-                    <a href="paginaproduto.html" class="produtoItem">
-                        <img src="Images/iconefoto.png" />
-                    <div>
-                        <h3>Nome</h3>
-                        <p>R$100,00</p>
-                    </div>
-                    </a>
-                </li>
-
-                <li class="produtoItemPai">
-                    <a href="paginaproduto.html" class="produtoItem">
-                        <img src="Images/iconefoto.png" />
-                    <div>
-                        <h3>Nome</h3>
-                        <p>R$100,00</p>
-                    </div>
-                    </a>
-                </li>
-               
-
-                <li class="produtoItemPai">
-                    <a href="paginaproduto.html" class="produtoItem">
-                        <img src="Images/iconefoto.png" />
-                    <div>
-                        <h3>Nome</h3>
-                        <p>R$100,00</p>
-                    </div>
-                    </a>
-                </li>
-
-                <li class="produtoItemPai">
-                    <a href="paginaproduto.html" class="produtoItem">
-                        <img src="Images/iconefoto.png" />
-                    <div>
-                        <h3>Nome</h3>
-                        <p>R$100,00</p>
-                    </div>
-                    </a>
-                </li>
-
-                <li class="produtoItemPai">
-                    <a href="paginaproduto.html" class="produtoItem">
-                        <img src="Images/iconefoto.png" />
-                    <div>
-                        <h3>Nome</h3>
-                        <p>R$100,00</p>
-                    </div>
-                    </a>
-                </li>
-
-                <li class="produtoItemPai">
-                    <a href="paginaproduto.html" class="produtoItem">
-                        <img src="Images/iconefoto.png" />
-                    <div>
-                        <h3>Nome</h3>
-                        <p>R$100,00</p>
-                    </div>
-                    </a>
-                </li>
-
-                <li class="produtoItemPai">
-                    <a href="paginaproduto.html" class="produtoItem">
-                        <img src="Images/iconefoto.png" />
-                    <div>
-                        <h3>Nome</h3>
-                        <p>R$100,00</p>
-                    </div>
-                    </a>
-                </li>
-
-                <li class="produtoItemPai">
-                    <a href="paginaproduto.html" class="produtoItem">
-                        <img src="Images/iconefoto.png" />
-                    <div>
-                        <h3>Nome</h3>
-                        <p>R$100,00</p>
-                    </div>
-                    </a>
-                </li>
-               
-               
-            </nav>
-        </section>
-    </main>
-
-
-
-    <footer class="fogradient">
-        <div>
-            <img
-                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAfxJREFUSEu11E2oTlEUBuDnKiWKEomBmYgowoAMlJ8oEyMDUiaEGFCUmBBJzPzMJEWYyEQyIpkgUgZ+BshMJkR+46zbPjr2Pdv9vlN31Vfn22uv9a79rnetASNsAyOcXxeAUfiAV7iH67hTKrQNIM72YwZ241MWHAC/srNH2IaHOVAOMB5XsTpdvF9Vtxzfs8ApmIOF2IvJ+IFNuNK8mwM8xdws2Q2sb6m6vjYB57ABXzAfL2pnDvC7wOV5bGn4Plb/3yb+D+MbLlZ92Zj6sqwE8BljCyAHcDT5moU8wSKMxptEVwCEAIao6FnVg9kFgJtYm3yTUp9OYGrFfw1+JH2fqsSxpw3gcuIyx3heVbQC7zJH8B4xUW1UvTR9P8DiNoCQ2tksyWOsTNrPgeMl75MvvvP/QyiannhsJpqFeEEnaxu0kOW6RrZDCKV0sjaAGJ7gsLavaaBCAE2L5p7ELVwooZd20WlsbwS9xiq8TGcxuXcR9IWFeg62gZQAxqQFNqiEZDEjx6oVcS395mUJz2An/hnW/23TUETIb2Yf5F/CZvysY4Zb17FnouKQaa8WL9nRK0DciyJ2pTVRWiNN8ONp3Q+eDfeCZmA0dl/a++MKz7mNNc3N2w9AnXMitmIJFmBacsQwhihi0/61LgC99qJvivpK3E+TOyWug/4AhQ9YGT/BtygAAAAASUVORK5CYII=" />
-        </div>
-        <div><a href="AJUDA.html"><h1>Suporte</h1>
-            </a>
-        </div>
-    </footer>
+     <a href="paginainicial.html"><div id="time">
+         <div>
+             <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAkVJREFUSEu11UnIT1EYBvDfJxkixc4QYkERUpQSVjIkmS1QSpKIhSyQIawkGUsSocRCMkZZyLCTKZKZLGwUKUOE89b56u+6//v30Xc293bve87zDs/znCatvJpa+XyNANpjBiZgKPriJ17iDi7iFL7VS7QKYCL25UOrCn2KJbhSFlQPYGPKdEPe8BoncB5387dhmILZ6JW/rcL2IkgZQPPhHzEPZ3NbyhJsg1k4hI5YgV21gUWAyOoMPqeMR6TND/6SBCNxAwE4Fteb99UCdMZjdMd8HCs5PAYcq6zyldiBR2nwQ5oHXxu4FHtTXx9icJ22VAG0y+yKBKfhdDGTCwjmLMtAZd2pAoj4rViDA1hcBHiTfvREfzyv0/tGAKNxDbfTLIcXAT5lJgQbvjQACMG9Konphnd4j65FgKBlDLoL4r1svcjCi+cYRNW1K/Z+yPvj/Tc2xPQHZAbcrwMQLQw69skDHZVU/LYmNtpyKxNlUBHgeKLYXKzGtgr+h3Kvol+qYBEO1sSuw+Y0x6NpjguKAMH9I3iCgfhRARKVzEx93lkT0zbp5xl6Yw5OFgFiuNGmCFiYen24AqDs1/JsEyHWENrXMkWOx6V/sIqwlZvZKsZlqtaV/FpsyWwIsztXUUl4T7QjhNUpUTSq2FMbX8+u1yeGbcqBQcmw61D6PYQlhJVMzU7aI9tKOOnuYjJVF87kZHz7s7qrxhEXTrApmPXHanRldkhZT8ekPLjgf9hFsCX4fjmb2vd6GTQCaCGRWl7BfwP8ApYabxnCPAebAAAAAElFTkSuQmCC"
+                 width="40px" height="35px" />
+             <h1>Time</h1>
+         </div>
+         <h3><u>To shop</u></h3>
+     </div></a>  
+     </header>
+    <h1 id="tituloEn">Entrar</h1>
+    
+    <form id="Endereço" action= "/action_page.php  ">    
+    <input type="text" id="fname" name="fname" placeholder="E-mail/Telefone/Usuário" style="width: 60%;"><br>
+    <input type="password" id="fname" name="fname" placeholder="Senha" style="width: 60%;"><br><br>
+    <input type="submit" id="botaoentre" value="Enviar" style="width: 60%;"><br>
+    <p><u>Esqueceu a senha?</u></p>
+    <div id="divredes">
+        <img class="rede" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAcBJREFUSEvV1U2IT1EYBvDfLHzFZGFtISmikVn4KlkiWYopC6wsUWoWsiBJoSyt2PjKgiRWSrGZlTINISUrpimaaRqKGffVnTod9/7/J5rirdute57zPu/7nPc8t8ccR88c5/dPEPRjBzZhK7+KeoU3eIB7nVTo1MF8nMfRLjI+w158bMK1EazBnepZW3hGUchgKcFCvMCqhg2v8R0rEbiImziA6VKCSziWgL/hLK5gtP4+r0p4CtHpPvxo6zSXaDueJOAJbMC7Qql+g+UENzCQoA7j6p8mj305wRA21gnHsTRLvqga10ddCM/g8SwmJxjDsnoxxm9blmwJQrZOcQIX2gg+YPlfEsS9udxGcB976sUpLMZMUm6TRNHxugSzv5qu220Eod/JBHwI17pIchHHE8wKvG8jiMWXySX6gvUI6ZqiD3FWvfXiSNZNo5vGlT+XZPtcVXQQId9shE8dwels0mLEb6WVNHlR3NLnDT4URG+rCYlJCqtYkLX0ELvzNtvMbnUlzd2qmniXxFPswmQpQeBChpAqPcB8/1eEd4UvNfpRyR8tvGgntmBzffuH65/NdXzq1GIJQYlErZj/n+AnYyRHGa4JiQsAAAAASUVORK5CYII="/>
+        <img class="rede" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAcFJREFUSEu11T+oT2EYwPHPLYUwyCIki0GRjKRkEJIuMYgsFDKIlAzyJxnUFQburTtYlEEU+TORQWajvyXCYjAoinCeen86vZ3znt8P92znff58n+d9/rxDJvgbmmD/ugCTsQXrsBQL8Atv8BT3cRPf2wItAdbjcnJaSvQV9uFBk1Ib4GQV6YkBru8njuBcbtMEOIXjAzivqx7ExfpBDtiI2wXnn3AYj/A26Y2ks/iNTFbhcc9HHTAdLzG7BfADi/E8k9cBIQr5kl7h64Ao1Ggh+mvYXpOvwQqsxfLMbhNuxVkdcAcbCoBjOJPkW3G9oDuOPTngPeYUjA7hQpJHMc8XdGNGluWAr5jynwCfq26amQO+YFoG+NiRVag/xOrMLnzNyAEvsDBT/IC5HTPxDvMynWdYlAOuVm26Y8AMYld9awjgSjUnu3LANkQrtn2DFLmxTSfhNea3EPoF/LmePIP4jw167x8AscpX4knPR9Oyi2V1oAHSTwan80XZBIizsd4k1kBdgLNVwY/mgZUenJ1pWmclozZAbIC9uNt0tV1P5lTsxub0NF5KTvZjuNqaNxAt+VdPZsd89SfuyqA/LwWt33YeVhnsaaE0AAAAAElFTkSuQmCC"/>
+        <img class="rede" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAW5JREFUSEu11T9IVlEYx/GPYOZgiEgULoJbk4TW0BgpiYto1K616CKItuYagpNOTQ4NVpCzOvknQidxVCERdHBwc3DQe+AOL2/39Z4jvgfOcs65z/d5znN+v9ugzqOhzvHdFdCEGYzg+W1J3gXQjE30YA/d9w2Yw1Qe9D1+3DfgCB0YxfeyHpZd0TP0oQVLOMEn/MZAttaFA2zgXxGsFqAN37I7Hq746DqDbeEUb/GoKuAXzFZDigAPsI3esvIL9l9gt3K9CDCWZ58a/wOWYyoI1/AqMfovvIvtwTnaEwETWIwFXKExEfAZX2MBZ3iSCAhiC6L7bxQ1eTWzgjeJgPCE+7EW0+TpWuWWQC8zIX6sVndRBU8zGzhG0EPq2MHLMh2E/QWMp0bHUGbfKzGA4D376EyA/CnSz21mF2QfTOxhBOQit5bDmCZXnnmN+Wy24ifWEZr5GIP5/IvJ3FWjnmlEwvFHyv4H8ZFqnKw74AYuPjMZIA0yawAAAABJRU5ErkJggg=="/>
+    </div>
+</form>
+<footer class="fogradient">
+    <div>
+        <img
+            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAfxJREFUSEu11E2oTlEUBuDnKiWKEomBmYgowoAMlJ8oEyMDUiaEGFCUmBBJzPzMJEWYyEQyIpkgUgZ+BshMJkR+46zbPjr2Pdv9vlN31Vfn22uv9a79rnetASNsAyOcXxeAUfiAV7iH67hTKrQNIM72YwZ241MWHAC/srNH2IaHOVAOMB5XsTpdvF9Vtxzfs8ApmIOF2IvJ+IFNuNK8mwM8xdws2Q2sb6m6vjYB57ABXzAfL2pnDvC7wOV5bGn4Plb/3yb+D+MbLlZ92Zj6sqwE8BljCyAHcDT5moU8wSKMxptEVwCEAIao6FnVg9kFgJtYm3yTUp9OYGrFfw1+JH2fqsSxpw3gcuIyx3heVbQC7zJH8B4xUW1UvTR9P8DiNoCQ2tksyWOsTNrPgeMl75MvvvP/QyiannhsJpqFeEEnaxu0kOW6RrZDCKV0sjaAGJ7gsLavaaBCAE2L5p7ELVwooZd20WlsbwS9xiq8TGcxuXcR9IWFeg62gZQAxqQFNqiEZDEjx6oVcS395mUJz2An/hnW/23TUETIb2Yf5F/CZvysY4Zb17FnouKQaa8WL9nRK0DciyJ2pTVRWiNN8ONp3Q+eDfeCZmA0dl/a++MKz7mNNc3N2w9AnXMitmIJFmBacsQwhihi0/61LgC99qJvivpK3E+TOyWug/4AhQ9YGT/BtygAAAAASUVORK5CYII=" />
+    </div>
+    <div><a href="/AJUDA.html"><h1>Suporte</h1>
+        </a>
+    </div>
+</footer>
 </body>
-<script src="script.js"></script>
-
 </html>
