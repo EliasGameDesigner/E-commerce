@@ -295,9 +295,7 @@ document.addEventListener('DOMContentLoaded', function () {
         if (btnComprar) {
              if(total != 0){
             btnComprar.addEventListener('click', () => window.location.href = 'checkout.html');
-            }else{
-                 alert('O carrinho Está vazio!'); 
-            }
+            
         }
 
         updateCartPage();
