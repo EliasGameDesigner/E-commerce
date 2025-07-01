@@ -225,10 +225,10 @@ document.addEventListener('DOMContentLoaded', function () {
     if (document.body.classList.contains('carrinho-page')) {
         const itemsList = document.getElementById('items');
         const totalDisplay = document.querySelector('#revisao #precos h1');
-
+        let total = 0;
         const updateCartPage = () => {
             const cartItems = getCartItems();
-            let total = 0;
+            
             itemsList.innerHTML = '';
 
             if (cartItems.length === 0) {
