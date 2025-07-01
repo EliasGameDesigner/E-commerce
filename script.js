@@ -291,7 +291,7 @@ document.addEventListener('DOMContentLoaded', function () {
         });
 
         const btnComprar = document.getElementById('btn-comprar');
-        if(total >= 0){
+        if(total > 0){
             if (btnComprar) {
                 btnComprar.addEventListener('click', () => window.location.href = 'checkout.html');
             }
