@@ -290,9 +290,14 @@ document.addEventListener('DOMContentLoaded', function () {
             }
         });
 
+       
         const btnComprar = document.getElementById('btn-comprar');
         if (btnComprar) {
+             if(total != o){
             btnComprar.addEventListener('click', () => window.location.href = 'checkout.html');
+            }else{
+                 alert('O carrinho Está vazio!'); 
+            }
         }
 
         updateCartPage();
