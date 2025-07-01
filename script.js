@@ -290,13 +290,12 @@ document.addEventListener('DOMContentLoaded', function () {
             }
         });
 
+       
         const btnComprar = document.getElementById('btn-comprar');
-        if(total > 0){
-            if (btnComprar) {
-                btnComprar.addEventListener('click', () => window.location.href = 'checkout.html');
-            }
+        if (btnComprar) {
+             if(total != 0){
+            btnComprar.addEventListener('click', () => window.location.href = 'checkout.html');
             
-
         }
 
         updateCartPage();
