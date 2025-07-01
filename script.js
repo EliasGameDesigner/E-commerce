@@ -293,7 +293,7 @@ document.addEventListener('DOMContentLoaded', function () {
        
         const btnComprar = document.getElementById('btn-comprar');
         if (btnComprar) {
-             if(total != o){
+             if(total != 0){
             btnComprar.addEventListener('click', () => window.location.href = 'checkout.html');
             }else{
                  alert('O carrinho Está vazio!'); 
